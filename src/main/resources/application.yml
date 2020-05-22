@@ -1,0 +1,18 @@
+auth-server: http://localhost:8081/sso
+
+server:
+  port: 8084
+  servlet:
+    session:
+      cookie:
+        name: client3
+    context-path: /clent3
+
+spring:
+  redis:
+    host: 127.0.0.1
+    database: 3
+
+  session:
+    store-type: redis
+
